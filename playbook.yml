@@ -1,0 +1,12 @@
+---
+- hosts: ftc
+  gather_facts: yes
+  become: true
+  
+  vars_files:
+    # - vars/ftb.yml
+    - vars/mcmyadmin-vault.yml
+    # - vars/ftb.yml
+
+  roles:
+    - patrick-hill.ftc-minecraft

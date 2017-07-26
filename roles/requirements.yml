@@ -1,0 +1,4 @@
+---
+
+- name: patrick-hill.ftc-minecraft
+  src:  https://github.com/patrick-hill/ansible-role-ftc-minecraft
