@@ -1,4 +1,11 @@
 ---
 
+- name: patrick-hill.common
+  src:  https://github.com/patrick-hill/ansible-role-common
+  
 - name: patrick-hill.ftc-minecraft
   src:  https://github.com/patrick-hill/ansible-role-ftc-minecraft
+  # src: /home/phill/src/ansible/ansible-role-ftc-minecraft/.git
+
+- name: williamyeh.oracle-java
+  src: https://github.com/William-Yeh/ansible-oracle-java.git

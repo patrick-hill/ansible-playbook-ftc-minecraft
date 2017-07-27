@@ -2,11 +2,22 @@
 - hosts: ftc
   gather_facts: yes
   become: true
+  vars:
+    java_version: 8
+    java_subversion: 131
+    java_set_javahome: true
+    java_download_from_oracle: false
+
+    # FTB
+    ftb_download_pack: false
+    thermos_download: false
+    mcmyadmin_download: false
+    mcmyadmin_restore_backup: true
   
   vars_files:
-    # - vars/ftb.yml
     - vars/mcmyadmin-vault.yml
-    # - vars/ftb.yml
 
   roles:
+    # - patrick-hill.common
+    # - williamyeh.oracle-java
     - patrick-hill.ftc-minecraft
